@@ -25,4 +25,3 @@ urlpatterns = [
     path('list/', ListaPizzas.as_view(), name='lista_pizzas'),
 
 ]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
