@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from app.views import HomePageView, ListaPizzas
+from django.conf.urls.static import static
 
 urlpatterns = [
 	path('', HomePageView.as_view(), name='home'),
@@ -24,3 +25,4 @@ urlpatterns = [
     path('list/', ListaPizzas.as_view(), name='lista_pizzas'),
 
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

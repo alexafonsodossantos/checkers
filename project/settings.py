@@ -16,9 +16,9 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-#MEDIA_ROOT = (
-#  os.path.join(BASE_DIR, "fotos") #pasta media para abrigar os arquivos dos usuários
-#)
+MEDIA_ROOT = (
+  os.path.join(BASE_DIR, "fotos") #pasta media para abrigar os arquivos dos usuários
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'bbcc$p*v4-j^hu(!om4v^x75sxi(gg#6cx4e($30c$9$5pj82*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -122,4 +122,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-#STATIC_URL = '/static/'
+STATIC_URL = '/static/'
