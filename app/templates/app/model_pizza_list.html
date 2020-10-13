@@ -3,18 +3,29 @@
 
 {% block content %}
 
+<div id="conteudo">
+
+
 {% for model_pizza in pizza %}
 
+
 <div id="pizza">
-	<div style="width:150px;
-	height:150px;
-	margin-left: 25px;
-	margin-top: 25px;">
+	<div id="pizza_foto">
 
-<img src="{{model_pizza.Foto.url}}"> </div>	
+		<img class="animate-up" src="{{model_pizza.Foto.url}}" style="width:100%; height:100%; border-radius: 1rem;">
 
-{{model_pizza.sabor}} </div>
+
+	</div>
+	<br>
+	{{model_pizza.sabor}} 
+	<br>
+ 	<font color="red"> R$ {{model_pizza.preco}} </font>
+
+</div>	
+
 
 {% endfor %}
 
+
+</div>
 {% endblock %}
